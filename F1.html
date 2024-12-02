@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8" />
+<title>FORM SHOP</title>
+<style>
+    
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    
+    .navbar {
+        background-color: #ff4d4d;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    
+    .payment-container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    
+    .payment-container h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .payment-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .payment-form label {
+        text-align: left;
+        margin-bottom: 5px;
+        color: #555;
+    }
+    
+    .payment-form input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    
+    .payment-form .btn {
+        background-color: #ff4d4d;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+    }
+    
+    .payment-form .btn:hover {
+        background-color: #e63939;
+    }
+    
+   
+    .social-links {
+        margin-top: 15px;
+    }
+    
+    .social-links a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
+</style>
+<style>
+   
+    .shop-button {
+      background-color: #4c5baf; 
+      color: white; 
+      border: none; 
+      padding: 12px 20px; 
+      font-size: 16px; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      transition: 0.3s; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    }
+
+    
+    .shop-button:hover {
+      background-color: #ff0000; 
+      transform: scale(1.1); 
+    }
+
+    
+    .shop-button:active {
+      transform: scale(1.05); 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+
+    </head>
+    <body>
+        
+<table width="50%" cellspacing="0" cellpadding="2" border="2" align="center">
+    <tr>
+      <h3><td colspan="2"><p style="text-align: center;"> SHOP</p<></td></h3> 
+    </tr>
+    <tr>
+        <td>
+            <p style="text-align: center;">NAME:</p> 
+         </td>
+         <td>
+            <p style="text-align: center;"> <input type="text" value="" placeholder="NAME" required></p>
+         </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="text-align: center;">LAST NAME:</p> 
+         </td>
+         <td>
+            <p style="text-align: center;"> <input type="text"  name="cardHolder" placeholder="LAST NAME" required></p>
+         </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="text-align: center;">ADRESS</p> 
+         </td>
+         <td>
+            <p style="text-align: center;"> <input type="text" value="" placeholder="ADRESS" required></p>
+         </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="text-align: center;">PHONE</p> 
+         </td>
+         <td>
+            <p style="text-align: center;"> <input type="text" value="" placeholder="PHONE" ></p>
+         </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="text-align: center;">TAILLE</p> 
+         </td>
+         <td>
+            <p style="text-align: center;"> <input type="radio" name="A" required>S
+                <input type="radio" name="A" required>M
+                <input type="radio" name="A" required>L
+                <input type="radio" name="A" required>XL
+                <input type="radio" name="A" required>XXL</p>
+         </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="text-align: center;">CITY</p> 
+         </td>
+         <td>
+            <p style="text-align: center;"> <select>
+                <option>CASABLANCA</option>
+                <option>RABAT</option>
+                <option>FES</option>
+                <option>MEKNES</option>
+                <option>OUJDA</option>
+                <option>JDIDA</option>
+                <option>SALE</option>
+                <option>KHRIBKA</option>
+                <option>SIDI KACEM</option>
+                <option>SIDI SLIMAN</option>
+                <option>TANGER</option>
+                <option>NADOR</option>
+                <option>BARKAN</option>
+                <option>ALAOWON</option>
+                <option>ASFI</option>
+                <option>KNITRA</option>
+            </select></p>
+         </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <center><a href="PAY.html"><input class="shop-button" type="submit" value ="SHOP"></a></p></center>
+         </td>
+
+
+    </tr>
+
+</table>
+
+    </body>
+</html>

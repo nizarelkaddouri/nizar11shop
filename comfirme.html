@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMFIRED</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .confirmation-container {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            width: 400px;
+        }
+        .confirmation-container h1 {
+            color: #28a745;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .confirmation-container p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .confirmation-container .order-details {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .confirmation-container .order-details p {
+            margin: 5px 0;
+        }
+        .confirmation-container a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            background: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .confirmation-container a:hover {
+            background: #0056b3;
+        }
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 50px;
+            justify-content: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        #random-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        button {
+            background-color: #ffffff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #ffffff;
+        }
+    </style>
+    <style>
+      
+        #container {
+          display: flex;
+          justify-content: center; 
+          align-items: center; 
+          font-family: Arial, sans-serif;
+          text-align: center;
+        }
+    
+        #random-number {
+          font-size: 36px;
+          font-weight: bold;
+          color: #007bff; 
+        }
+        body {
+                font-family: Arial, sans-serif;
+                background-color: #f3f3f3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .contact-section {
+                background-color: #008b8b;
+                padding: 10px;
+                border-radius: 8px;
+                text-align: center;
+                color: white;
+                width: 100%;
+            }
+            .contact-section h2 {
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+            .icons {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+            }
+            .icons a {
+                text-decoration: none;
+                color: white;
+                font-size: 30px;
+                transition: transform 0.3s;
+            }
+            .icons a:hover {
+                transform: scale(1.2);
+            }
+      </style>
+</head>
+<body>
+
+<div class="confirmation-container">
+    <h1>THE REQUEST HAS BEEN CONFIRMED</h1>
+    <p>THANKS FOR YOU RESQUEST WE ARE NOW REVIEWING YOUR REQUEST AND WILL YOU SHORTLY</p>
+    <table align="center">
+        <CENTER>
+    <div class="order-details">
+        <p style="text-align: center;"><strong>ORDER NUMBER:</strong> 
+
+            <h1></h1>
+    <p></p>
+    <div id="container">
+        
+        <div id="random-number"></div>
+      </div>
+    
+      <button id="auto-click-button" style="display:none;">Click Me!</button>
+    
+<script>
+        function generateRandomNumber() {
+          const randomNumber = Math.floor(Math.random() * 100000) + 1; 
+          document.getElementById("random-number").textContent = randomNumber; 
+        }
+    
+        
+        function autoClickButton() {
+          document.getElementById("auto-click-button").click();
+        }
+    
+        
+        window.onload = function () {
+          generateRandomNumber();
+          autoClickButton(); 
+        };
+      </script>
+  </CENTER>
+        </p>
+        <p style="text-align: center;"><strong>DATE</strong>            
+            <select id="expiry-month">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+            <select id="expiry-month" >
+                <option>JANURY</option>
+                <option>FEBRUARY</option>
+                <option>MARCH</option>
+                <option>APRIL</option>
+                <option>MAY</option>
+                <option>JUNE</option>
+                <option>JULY</option>
+                <option>AUGUST</option>
+                <option>SEPTEMBER</option>
+                <option>OCTOBER</option>
+                <option>NOVEMBER</option>
+                <option>DECEMBER</option>
+            </select>
+            <select id="expiry-year">
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+                <option>2030</option>
+                <option>2031</option>
+                <option>2032</option>
+                <option>2033</option>
+                <option>2034</option>
+                <option>2035</option>
+                <option>2036</option>
+                <option>2037</option>
+                <option>2038</option>
+                <option>2039</option>
+                <option>2040</option>
+                <option>2041</option>
+                <option>2042</option>
+                <option>2043</option>
+                <option>2044</option>
+                <option>2045</option>
+                <option>2046</option>
+                <option>2047</option>
+                <option>2048</option>
+                <option>2049</option>
+                <option>2050</option>              
+                
+            </select>
+</p>
+        <p style="text-align: center;"><stronG>ADRESS:</strong><input type="text" value="" placeholder="ADRESS"</p>
+    </div>
+    
+    <p>IF YOU HAVE ANY QUESTIONS<br><a href="https://wa.me/212660573610">CONTACT US</a>.</p>
+    <a href="INDUX.html">BACK TO A MAIN PAGE</a>
+</div>
+</table>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Paiement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #d11c55;
+            margin-bottom: 20px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .details-box {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .details-box p {
+            margin: 5px 0;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-validate {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-cancel {
+            background-color: #dc3545;
+            color: white;
+        }
+        .small-text {
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><h1>Demande de Paiement</h1></center>
+
+        <div class="form-section">
+            <label>Modes de paiement :</label>
+            <p><input type="radio" name="A"><img src="VISA.jpg" alt="Visa" style="height: 20px;"> 
+                <input type="radio" name="A"><img src="MASTER.jpg" alt="Mastercard" style="height: 20px;">
+                <input type="radio" name="A">PAY CASH</input> 
+            </p>
+        </div>
+
+        <div class="form-section">
+            <label for="card-name">Nom du porteur de la carte :</label>
+            <input type="text" id="card-name" placeholder="NOM DU PORTEUR DE LA CARTE">
+
+            <label for="card-number">Numéro de carte de paiement :</label>
+            <input type="number" id="card-number" placeholder="NUMÉRO DE CARTE DE PAIEMENT">
+
+            <label for="expiry-date">Date d'expiration :</label>
+            <select id="expiry-month">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <!-- Add remaining months -->
+            </select>
+            <select id="expiry-year">
+                <option>2024</option>
+                <option>2025</option>
+                <!-- Add more years -->
+            </select>
+
+            <label for="cvv">Code de vérification :</label>
+            <input type="text" id="cvv" placeholder="123">
+        </div>
+
+        <div class="details-box">
+            <h3>Détail de la commande</h3>
+            <p><strong>Identifiant :</strong> #676995</p>
+            <p><strong>Montant :</strong> 250MAD</p>
+
+            <h3>Détail Marchand</h3>
+            <p><strong>Nom du marchand :</strong> PLAY MANAGEMENT GROUP (400007823)</p>
+
+            <h3>Informations du Client</h3>
+            <p><strong>Nom :</strong> NIZAR ELKADDOURI</p>
+            <p><strong>Tél :</strong> 066057</p>
+            <p><strong>E-mail :</strong> nizarelkaddouri@gmail.com</p>
+        </div>
+
+        <div class="form-section">
+            <input type="checkbox" id="accept-terms">
+            <label for="accept-terms" class="small-text">Confirmer l'acceptation des conditions générales d'utilisation du service</label>
+        </div>
+
+        <div class="btn-group">
+            <a href="comfirme.html"><button class="btn-validate">Valider le paiement</button></a>
+            <a href="INDUX.html"><button class="btn-cancel">Annuler</button></a>
+        </div>
+    </div>
+</body>
+</html>

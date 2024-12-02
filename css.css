@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ff4d4d;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Payment Form Container */
+.payment-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.payment-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form label {
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.payment-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.payment-form .btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.payment-form .btn:hover {
+    background-color: #e63939;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+.x{
+    text-align: center;
+}
+.a{
+width: 300px;
+height:400px;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.contact-section {
+    background-color: #008b8b;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    transition: transform 0.3s;
+}
+.icons a:hover {
+    transform: scale(1.2);
+}
